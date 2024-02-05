@@ -1,38 +1,646 @@
-.App {
+.navbar {
+  --bs-navbar-padding-x: 10rem;
+  padding-left: 14rem;
+  background-color: transparent;
+}
+.navbar-nav{
+  direction: rtl;
+}
+
+li {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.navbar.active {
+  background-color: #5b5959b0;
+}
+
+.nav-link {
+  font-size: 1.25rem;
+  color: white;
+}
+
+.navbar-brand img {
+  width: 16rem;
+}
+
+a{
+  text-decoration: none;
+}
+a h1 {
+  color: black;
+  text-decoration: none;
+}
+
+a h1:hover {
+  color: #b44060;
+}
+
+.navbar-toggler{
+  background-color: white;
+}
+.dropdown-menu{
+  background-color: #d595a7;
+ 
+}
+
+.dropdown-item{
+  font-weight: 500;
+}
+
+
+
+
+.sectionTop {
+  min-height: 35rem;
+  position: relative;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.489) 0%, rgba(0, 0, 0, 0.566) 75%, #0000006d 100%), url("../public/img/homeBackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sectionTop h1 {
+
+  font-family: "Rubik Glitch", system-ui;
+  font-style: normal;
+  color: white;
+  position: absolute;
+  /* Set position to absolute */
+  right: 10%;
+  top: 33%;
+  /* Optional: Adjust the top position if needed */
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+}
+
+.sectionTop h2 {
+  color: white;
+  font-weight: 800;
+  position: absolute;
+  /* Set position to absolute */
+  right: 20%;
+  top: 50%;
+  /* Optional: Adjust the top position if needed */
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.sectionTop span {
+  color: #fb23df;
+}
+
+
+
+.sectionTop h2 button {
+
+  padding: 8px 18px;
+  margin: 16px 12px;
+  font-size: 26px;
+  background-color: transparent;
+  color: #fb23df;
+  border: 3px solid #fb23df;
+  font-weight: 700;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+
+}
+
+.sectionTop h2 button:hover {
+  transform: translateY(-10px);
+}
+
+.sectionTop img {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  z-index: 0;
+}
+
+
+.particles-container {
+  height: 35rem;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+
+}
+
+#tsparticles {
+  height: 100%;
+  width: 100%;
+
+
+
+}
+
+.sectionAboutMe {
+  /* margin-top: 5rem;
+  margin-bottom: 6rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sectionAboutMe p {
+  width: 60%;
+  font-weight: 700;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.specialSpan {
+  color: #a7419a;
+  font-weight: 800;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sectionAboutMe h2 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.sectionMotivation {
+  margin-bottom: 5rem;
+}
+
+
+
+.cardAnim {
+  border: 2px solid #a7419a;
+  border-radius: 45px;
+  box-shadow: -4px -3px 10px 1px #928b8b;
+  text-align: center;
+  font-family: arial;
+  flex: 25%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  min-height: 250px;
+  max-height: 250px;
+  min-width: 250px;
+  max-width: 250px;
+}
+
+
+.cardsFlex {
+  display: flex;
+  justify-content: center;
+  height: 350px;
+ 
+}
+
+.alignSelfEnd {
+  align-self: flex-end;
+}
+
+
+.sectionInfluencer {
+  min-height: 35rem;
+  display: flex;
+}
+
+.titleInfluencerDiv {
+
+  flex: 35%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  background: radial-gradient(circle, rgba(145, 145, 145, 1) 0%, rgba(0, 0, 0, 0.8911939775910365) 100%);
+  border-radius: 3rem;
+}
+
+.titleInfluencerDiv2 {
+
+  flex: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  background: radial-gradient(circle, rgb(243 182 106) 0%, rgba(0, 0, 0, 0.8911939775910365) 100%);
+  border-radius: 3rem;
+}
+
+
+
+.titleInfluencerDiv h1,
+.titleInfluencerDiv2 h1{
+  font-family: "Lemon", serif;
+  font-weight: 400;
+  font-style: normal;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contentInfluencerDiv {
+  flex: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 4%;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contentInfluencerDiv h1,
+.contentInfluencer h1 {
+  font-family: "Rubik Dirt", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+.ulInfluencer {
+  direction: rtl;
+  width: 90%;
+
+}
+
+.ulInfluencer li {
+  margin-bottom: 8px;
+
+
+}
+
+.sectionBusiness {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../public/img/backgroundBusinessSection3.jpg");
+  width: 100%;
+  height: 32rem;
+  padding-top: 2rem;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.sectionBusiness h1 {
+  margin-bottom: 2rem;
+  font-family: "Rubik Dirt", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  color: white;
+}
+
+.sectionBusiness li {
+
+  color: white;
+  width: 60%;
+}
+
+.hrSeperate {
+  margin: 0;
+  border: 40px solid black;
+  opacity: 1;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../public/img/backgroundContact.png");
+  width: 100%;
+  min-height: 32rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  gap: 5%;
+  background-size: inherit;
+}
+
+
+.contactUsForm {
+  border: 5px solid #ffb0c6;
+  border-radius: 45px;
+  box-shadow: -4px -3px 10px 1px #928b8b;
+  max-width: 500px;
+  min-height: 26rem;
+  max-height: 250px;
+  text-align: center;
+  min-width: 425px;
+
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.contactUsForm h1 {
+  color: #ffb0c6;
+  font-family: "Rubik Dirt", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+
+input,
+textarea {
+  background-color: unset;
+
+}
+
+input::placeholder,
+textarea::placeholder {
+  text-align: right;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+
+}
+
+.footer .btn {
+  background-color: transparent;
+  border: 2px solid #ffb0c6;
+  color: #ffb0c6;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.contactUsIcons {
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
+}
+
+.icons {
+  font-size: 3rem;
+}
+
+/* influencerBackground */
+
+.sectionTopInfluencer{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("/public/img/influencerBackground.jpg");
+height: 14rem;
+}
+
+
+.contentInfluencer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+}
+
+.s{
+  width: 50%;
+}
+
+.influencerExplain{
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("/public/img/influencerBackground2.jpg");
+min-height: 40rem;
+margin-top: 3rem;
+background-position: bottom;
+background-size: contain;
+/* border-radius: 4rem; */
+border-top-left-radius: 4rem;
+border-top-right-radius: 4rem;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.influencerExplain h1 {
+  font-family: "Lemon", serif;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(90deg, rgba(233,233,233,1) 2%, rgb(208 208 221) 35%, rgba(179,136,177,1) 100%);  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.influencerExplain p{
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+  align-self: center;
+  text-align: end;
+  width: 60%;
+}
+
+.influencerExplain h4{
+  color: #ffb0c6;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.influencerExplain2{
+  background: linear-gradient(to bottom, rgb(249, 249, 249) 0%, rgba(0, 0, 0, 0.329) 75%, #0000008a 100%), url("/public/img/influencerBackground3.png");
+
+  /* background:  url("/public/img/influencerBackground3.png"); */
+  min-height: 40rem;
+  margin-top: 3rem;
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.influencerExplain2 h1{
+  font-family: "Rubik Dirt", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  text-align: center;
+
+}
+
+.influencerExplain2 p,.influencerExplain2 h3{
+  margin-right: 3rem;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.influencerExplain2 p{
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 500;
+  width: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1100px)and (min-width:200px) {
+
+  .cardsFlex{
+    height: 210px;
   }
-  to {
-    transform: rotate(360deg);
+  .cardAnim{
+    min-height: 180px;
+    max-height: 180px;
+    min-width: 180px;
+    max-width: 180px;
   }
+  .contentInfluencerDiv h1, .contentInfluencer h1{
+    font-size: 2rem;
+  }
+
+  li{
+    font-size: 17px;
+  }
+  .navbar{
+    --bs-navbar-padding-x: 0;
+    padding-left: 0;
+  }
+
+  .sectionTop h1{
+    right: -20%;
+    top: 23%;
+  }
+  .sectionTop h2{
+    right: 10%;
+  }
+
+  .contentInfluencerDiv{
+    row-gap: 1%;
+  }
+
+
+}
+
+@media (max-width:770px)and (min-width:200px) {
+
+  .sectionTop{
+    min-height: 30rem;
+  }
+
+  .sectionTop img{
+    width: 30rem;
+    left: -10%;
+  }
+  .sectionTop h1{
+    font-size: 5rem;
+  }
+  .sectionTop h2{
+    top: 56%;
+    right: -13%;
+  }
+
+
+  .sectionAboutMe p{
+    width: 80%;
+  }
+
+  .cardsFlex{
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .cardAnim{
+    flex: 48%; /* Two cards in one row for smaller screens */
+    margin: 1%;
+    height: auto;
+    width: auto;
+  }
+
+  .sectionInfluencer{
+    flex-direction: column;
+    min-height: auto;
+    gap: 2rem;
+  }
+
+  .titleInfluencerDiv{
+    display: none;
+  }
+  
+  .sectionBusiness{
+    height: auto;
+    padding-top: 2rem;
+  }
+
+  .sectionBusiness h1{
+    font-size: 3rem;
+  }
+
+  .sectionBusiness li{
+    width: 80%;
+  }
+
+  .footer{
+    min-height: auto;
+    flex-direction: column;
+    column-gap: 1rem;
+  }
+
+
+}
+
+@media (max-width:500px)and (min-width:200px) {
+  .sectionAboutMe p {
+    width: 95%;
+}
+.cardAnim {
+  min-height: 100px;
+  max-height: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  border-radius: 18px;
+}
+
+.sectionAboutMe h2 {
+  font-size: 2.5rem;
+
+}
+.contentInfluencerDiv h1, .contentInfluencer h1{
+  font-size: 1.5rem;
+}
+.ulInfluencer {
+  width: 100%;
+}
+li {
+  font-size: 15px;
+}
+.sectionBusiness h1 {
+  font-size: 2rem;
+}
+
+.contactUsIcons {
+  display: flex;
+  flex-direction: row;
+  row-gap: 1rem;
+  justify-content: space-around;
+  width: 100%;
+}
+.h5, h5 {
+  font-size: 0.8rem;
+}
+
+.contactUsForm{
+  min-width: auto;
+  max-height: 500px;
+}
+
+
+
 }
